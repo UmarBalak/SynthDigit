@@ -43,7 +43,7 @@ def load_generator_model():
 
 def main():
     st.set_page_config(
-        page_title="SynthNet: MNIST GAN Generator",
+        page_title="SynthDigit: MNIST GAN Generator",
         page_icon="🤖",
         layout="wide",
         initial_sidebar_state="expanded",
@@ -74,7 +74,7 @@ def main():
     </style>
     """, unsafe_allow_html=True)
     
-    st.title("🤖 SynthNet: MNIST Digit Generator")
+    st.title("🤖 SynthDigit: MNIST Digit Generator")
     st.markdown("""
     ### Synthetic Digit Generation using Deep Convolutional Generative Adversarial Network
     
@@ -153,9 +153,9 @@ def main():
         else:
             st.warning("Please load the model first!")
     
-    st.sidebar.header("📖 About SynthNet")
+    st.sidebar.header("📖 About SynthDigit")
     st.sidebar.info("""
-    SynthNet is a Deep Convolutional GAN for generating synthetic MNIST digits.
+    SynthDigit is a Deep Convolutional GAN for generating synthetic MNIST digits.
     
     Key Features:
     - High-quality digit generation
